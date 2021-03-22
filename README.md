@@ -20,7 +20,9 @@ This includes just over 100,000 movies, most of which are above the mean rating 
 
 After importing the data, we combine it while also dropping any unecessary columns, such as 'genre'. While genre might seem important at first glance, we are primarily measuring similarity across multiple users. So, if a user likes a certain genre, movies under that description will be grouped together anyways. 
 
-After finding the average rating for a movie, we have our baseline, and can remove movies from the list that fall under the mean rating of 3.5.
+After finding the average rating for a movie, we have our baseline, and can remove movies from the list that fall under the mean rating of 3.5. he graph belows shows the spread of ratings above that cutoff.
+
+![](images/Screen%20Shot%202021-03-22%20at%202.57.02%20PM.png)
 
 After combining and restructuring the data, we create pivot tables to cross reference whether or not a user has rated a title (Values 1 or 'Nan'), which we can use to find correlation ratings across different films. With this, we create the first part of our recommender system, which simply finds similarly rated movies and groups the top choices based on the input of a single movie. For example, if we selected "Pulp Fiction", the top choices would be Reservoir Dogs, American Beauty, and Saving Private Ryan. 
 
